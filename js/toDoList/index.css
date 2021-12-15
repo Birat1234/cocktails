@@ -1,0 +1,104 @@
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: rgb(211, 216, 214);
+    letter-spacing: 3px;
+}
+
+h1{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 50px;
+    letter-spacing: 3px;
+}
+
+.drag-container {
+  margin: 20px;
+}
+
+.main-list{
+    display: flex;
+    align-items: flex-start;
+}
+
+.inner-list{
+    margin: 0 10px;
+    padding: 5px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    overflow-x: hidden;
+    flex: 1;
+}
+
+ul {
+  list-style-type: none;
+  margin: 30px;
+  padding: 0;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+}
+
+.work-list{
+    min-height: 50px;
+}
+
+.work{
+    margin: 10px;
+    padding: 10px;
+    height: fit-content;
+    
+    background-color: rgba(0, 0, 0, 0.8);
+    color: cornsilk;
+    border-radius: 10px;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.work :focus {
+  outline: none;
+  background-color: white;
+  color: black;
+}
+
+.add-btn-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-btn {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.add-btn:hover {
+  background-color: rgba(175, 171, 171, 0.9);
+}
+
+.save {
+  display: none;
+}
+
+.save:hover {
+  transition: unset;
+  filter: brightness(95%);
+  color: white;
+}
+
+
+
+.custom-scroll {
+  overflow-y: auto;
+  max-height: 75vh;
+}

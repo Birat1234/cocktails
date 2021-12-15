@@ -1,0 +1,6 @@
+photo.setAttribute('href', item.links.html);
+photo.setAttribute('target', '_blank');
+
+img.setAttribute('src', item.urls.regular);
+img.setAttribute('alt', item.alt_description);
+img.setAttribute('title', item.alt_description);

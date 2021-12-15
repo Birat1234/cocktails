@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src='./index.js' defer></script>
+</head>
+<body>
+    <h1>TODO - LIST</h1>
+
+    <div class="drag-container">
+        <ul class="main-list">
+            <li class="inner-list backlog-colum custom-scroll">
+                <span>
+                    <h3 class="heading">Backlog</h3>
+                </span>
+                <ul class="work-list " id="backlog">
+                    
+                </ul>
+
+                <div class="add-btn-group">
+                    <div class="add-btn">
+                        <span>+</span>
+                        <span>Add Item</span>
+                    </div>
+
+                    <div class="add-btn save">
+                        <span>Save</span>
+                    </div>
+                </div>
+            </li>
+
+            <li class="inner-list progress-colum custom-scroll">
+                <span>
+                    <h3 class="heading">In Progress</h3>
+                </span>
+                <ul class="work-list" id="progress">
+                    
+                </ul>
+            
+                <div class="add-btn-group">
+                    <div class="add-btn">
+                        <span>+</span>
+                        <span>Add Item</span>
+                    </div>
+            
+                    <div class="add-btn save">
+                        <span>Save</span>
+                    </div>
+                </div>
+            </li>
+
+            <li class="inner-list complete-colum custom-scroll">
+                <span>
+                    <h3 class="heading">Complete</h3>
+                </span>
+                <ul class="work-list" id="complete">
+                    
+                </ul>
+            
+                <div class="add-btn-group"> 
+                    <div class="add-btn">
+                        <span>+</span>
+                        <span>Add Item</span>
+                    </div>
+            
+                    <div class="add-btn save">
+                        <span>Save</span>
+                    </div>
+                </div>
+            </li>
+
+            <li class="inner-list on-hold-colum custom-scroll">
+                <span>
+                    <h3 class="heading">On Hold</h3>
+                </span>
+                <ul class="work-list" id="on-hold">
+                    
+                </ul>
+            
+                <div class="add-btn-group">
+                    <div class="add-btn">
+                        <span>+</span>
+                        <span>Add Item</span>
+                    </div>
+            
+                    <div class="add-btn save">
+                        <span>Save</span>
+                    </div>
+                </div>
+            </li>
+            
+
+            
+            
+        </ul>
+    </div>
+
+</body>
+</html>

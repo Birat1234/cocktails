@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-size: 1rem;
+  line-height: 1.8rem;
+  text-align: justify;
+}
+
+.loader {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  position: fixed;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+.navigation-items {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-container {
+  position: fixed;
+  top: 0;
+}
+
+.background {
+  z-index: -1;
+  width: 100%;
+  height: 60px;
+  right: 0;
+  position: fixed;
+}
+
+.clickable{
+  cursor: pointer;
+  color: rgb(48, 56, 136);
+  user-select: none;
+}
+
+.hidden{
+  display: none ;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: center;
+}
+===========
+
+        const card = document.createElement('div');
+        card.classList.add('card');
+
+        const link = document.createElement('a');
+        link.href = result.hdurl;
+        link.title = 'View full image';
+        link.target  = '_blank';
+
+        const image = document.createElement('img');
+        image.src = result.url;
+        image.alt = 'NASA image';
+        image.classList.add('card-img');
+
+        const cardBody = document.createElement('div');
+        cardBody.classList.add('card-body');
+
+        const cardTitle = document.createElement('h5');
+        cardTitle.classList.add('card-title');
+        cardTitle.textContent = result.title;
+
+        const saveText = document.createElement('h5');
+        saveText.classList.add('clickable');
+        saveText.textContent = 'Add to favourites';
+
+        const cardText = document.createElement('p');
+        cardText.textContent = result.explaination;
+
+         const footer = document.createElement('small');
+         footer.classList.add('.date-info');
+         
+         const date = document.createElement('strong');
+         date.textContent = result.date;
+
+         const copyright = document.createElement('span');
+         copyright.textContent = `${result.copyright}`;
+
+         footer.append(date, copyright);
+         cardBody.append(cardTitle, cardText, saveText, footer);
+         link.appendChild(image);
+         card.append(link,cardBody);
+	 imagesContainer.appendChild(card);
+
+
+
+
+ 
+
+
+
+
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src='./index.js' defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="input-container" id="input-container" >
+            <h1>Custom Countdown</h1>
+            <form action="" id="form">
+                <label for="title">Title</label><br>
+                <input type="text" id="title" required><br>
+    
+                <label for="date">Select a date</label><br>
+                <input type="date" id="date" required><br>
+    
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div class="countdown-container" id="countdown-container"  hidden>
+            <h1 id="countdown-title"></h1>
+            <ul>
+                <li><span></span>Days</li>
+                <li><span></span>Hours</li>
+                <li><span></span>Minutes</li>
+                <li><span></span>Seconds</li> 
+            </ul>
+            <button id="countdown-btn">Reset</button>
+        </div>
+
+        <div class="countdown-complete" id="countdown-complete" hidden>
+            <h1 id="complete-info"></h1>
+            <button id="complete-btn">Reset</button>
+        </div>
+
+
+    </div>
+</body>
+</html>

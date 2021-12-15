@@ -1,0 +1,14 @@
+    <div class="container">
+       <div class="heading">
+            <h1>Custom Countdown</h1>
+            <form action="" id="form">
+                <label for="title">Title</label><br>
+                <input type="text" id="title"><br>
+
+                <label for="date">Select a date</label><br>
+                <input type="text" id="date"><br>
+
+                <button type="submit" form="form" value="submit">Submit</button>
+            </form>
+        </div> -->
+    </div>

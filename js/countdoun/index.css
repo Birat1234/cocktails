@@ -1,0 +1,109 @@
+html{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    min-height: 100vh;
+    overflow-y: hidden;
+    display: flex;
+    align-items:center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.container{
+    /* margin: auto;
+    background-color: antiquewhite;
+    width: 30%;
+    height: 300px;
+    text-align: center;
+     padding: 10px */
+    background-color: rgba(75, 88, 88, 0.6);
+    display: flex;
+    justify-content: center;
+    min-width: 500px;
+    min-height: 200px;
+    margin: auto auto;
+    padding: 25px;
+    border-radius: 5px;
+    
+}
+
+.heading{
+    margin: 9px;
+}
+
+.input-container {
+    position: relative;
+}
+
+h1{
+    text-align: center;
+}
+
+.form {
+  width: 100%;
+  margin: 5px;
+}
+
+li{
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 3px;
+}
+
+input{
+    border-radius: 3px;
+    border: none;
+    padding: 8px;
+}
+
+button{
+    margin-top: 9px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    background-color: rgb(126, 219, 191);
+    color: rebeccapurple;
+    font-size: 14px;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.countdown-container{
+    font-size: 30px;
+    text-align: center;
+}
+
+button:hover{
+    background-color: rgb(73, 243, 96);
+    color: black;
+    /* transform: translateY(3px); */
+    /* filter: brightness(110%); */
+}
+
+.countdown-complete{
+    height: 90%;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px){
+    .container{
+        min-width: 80vw;
+        
+    }
+
+    .countdown-container h1{
+    font-size: 17px;
+    
+    }
+
+}
+
